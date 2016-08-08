@@ -10,7 +10,7 @@ before_install:
   - julia -e 'Pkg.add("MsgPack")'
   - julia -e 'Pkg.add("MsgPackRpcServer")'
 script:
-  - julia test/runtests.jl
+  - cd test && julia runtests.jl
 notifications:
   email: false
 # uncomment the following lines to override the default test script
