@@ -1,13 +1,12 @@
 # Documentation: http://docs.travis-ci.com/user/languages/julia/
-language: julia
-os:
-  - linux
-  - osx
-julia:
-  - release
-  - nightly
+language: ruby
+ruby:
+  - 2.3.0
 before_install:
+  - apt-get install julia
   - gem install msgpack
+script:
+  - julia test/runtests.jl
 notifications:
   email: false
 # uncomment the following lines to override the default test script
