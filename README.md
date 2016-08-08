@@ -1,5 +1,7 @@
 # MessagePack RPC Server for Julia
 
+[![Build Status](https://travis-ci.org/remore/MsgPackRpcServer.jl.svg?branch=master)](https://travis-ci.org/remore/MsgPackRpcServer.jl)
+
 A Julia implementation of MessagePack-RPC Server Library. 
 
 ## Usage
