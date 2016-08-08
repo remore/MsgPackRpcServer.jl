@@ -7,7 +7,8 @@ before_install:
   - sudo add-apt-repository -y ppa:staticfloat/julia-deps
   - sudo apt-get update
   - sudo apt-get install -y julia
-  - gem install msgpack
+  - julia -e 'Pkg.add("MsgPack")'
+  - julia -e 'Pkg.add("MsgPackRpcServer")'
 script:
   - julia test/runtests.jl
 notifications:
